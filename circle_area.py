@@ -23,7 +23,7 @@ def loop_program():
             print("\nThanks for using this program! Goodbye.")
             break
         else:
-            print('Plese type either "Y" or "N"')
+            print('\nPlease type either "Y" or "N"\n')
 
 def main():
     display_radius()
