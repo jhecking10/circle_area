@@ -29,4 +29,5 @@ def main():
     display_radius()
     loop_program()
 
-main()
+if __name__ == "__main__":
+    main()
