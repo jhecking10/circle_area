@@ -1,5 +1,8 @@
 from math import pi
 
+def greeting():
+    print("Welcome to the circle radius calculator!")
+
 def area_of_circle(radius):
     result = pi * radius ** 2
     return round(result, 2)
@@ -26,6 +29,7 @@ def loop_program():
             print('\nPlease type either "Y" or "N"\n')
 
 def main():
+    greeting()
     display_radius()
     loop_program()
 
