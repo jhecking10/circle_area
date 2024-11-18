@@ -1,7 +1,8 @@
 from math import pi
 
 def greeting():
-    print("Welcome to the circle radius calculator!")
+    print("\nWelcome to the circle area calculator!\n")
+    print("This program will calculate the area of a given circle using its radius.")
 
 def area_of_circle(radius):
     result = pi * radius ** 2
