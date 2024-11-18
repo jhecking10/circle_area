@@ -11,7 +11,10 @@ def area_of_circle(radius):
 def display_radius():
     while True:
         try:
-            user_input = int(input("\nPlease type your circle's radius below.\n"))
+            user_input = float(input("\nPlease type your circle's radius below.\n"))
+            if user_input < 0:
+                print("\nPlease type a value greater than zero.")
+                continue
             print(f"\nThe area of this circle is {area_of_circle(user_input)}\n")
             break
         except:
@@ -24,7 +27,7 @@ def loop_program():
         if cont == "y":
             display_radius()
         elif cont == "n":
-            print("\nThanks for using this program! Goodbye.")
+            print("\nThanks for using this program! Goodbye.\n")
             break
         else:
             print('\nPlease type either "Y" or "N"\n')
